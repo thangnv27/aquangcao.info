@@ -1,0 +1,542 @@
+/*
+Theme Name: advertiser
+Theme URI: http://ppo.vn
+Author: the PPO VN team
+Author URI: http://ppo.vn
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: ppoadv
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body{
+    background: #fff;
+    font-size: 14px;   
+    font-family: Tahoma,Helvetica,sans-serif;
+}
+img {
+    max-width: 100%;
+}
+embed, iframe, object {
+    max-width: 100%;
+}
+a:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+/*.container {
+    min-width: 1200px;
+}*/
+#header {
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.logo {
+    margin-top: 0;
+    overflow: hidden;
+}
+/*Menu*/
+#mainmenu{
+    background: #0368b4;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+#mainmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#mainmenu ul li {
+    display: inline;
+    float: left;
+    position: relative;
+}
+#mainmenu ul li a {
+    background:url("images/a.png") no-repeat right center;
+    color: #fff !important;
+    display: block;
+    line-height: 40px;
+    padding: 0 18px;
+    text-decoration: none;
+}
+#mainmenu ul li:hover .sub-menu{
+    display: block;
+}
+#mainmenu ul li:last-child a {
+    background: none
+}
+#mainmenu .sub-menu{
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+#mainmenu .sub-menu li:last-child a{
+    border-bottom: none;
+    background: #333333;
+}
+#mainmenu ul li ul li {
+    display: list-item;
+    float: none;
+}
+#mainmenu ul li ul li a {
+    background: #333333;
+    border-bottom: 1px solid gray;
+    border-top-width: 0;
+    color: #fff;
+    font: 13px Verdana;
+    margin: 0;
+    padding: 10px 5px;
+    width: 283px;
+}
+/*Slider*/
+#mainslider {
+    margin-top: 10px;
+}
+.project, .partner {
+    margin: 15px 0;
+}
+.project .item img, .partner .item img {
+    height: 155px;
+    width: 100%;
+}
+.project, .partner {
+    margin: 15px 0;
+}
+.project .item, .partner .item {
+    border: 1px solid #ccc;
+    margin: 0 3px;
+    padding: 5px;
+}
+.owl-controls .owl-prev, .owl-controls .owl-next {
+    background-image: url("images/control-slider.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 29px;
+    margin-top: -14.5px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+}
+.owl-controls .owl-next {
+    background-position: right top;
+    right: 30px;
+}
+.owl-controls .owl-next:hover {
+    background-position: right bottom;
+}
+.owl-controls .owl-prev {
+    background-position: left bottom;
+    left: 30px;
+}
+.owl-controls .owl-prev:hover {
+    background-position: left top;
+}
+.productimg img {
+    width: 100%;
+}
+.titlecat {
+    background:url("images/box.png") no-repeat;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.titlecat h2 {
+    color: #00417b;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.titlecat h2 a, .titlecat h2 span{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.titlecat h2 span {
+    margin-left: 0;
+    margin-right: 10px
+}
+.listproduct {
+    margin: 0 -7px;
+    overflow: hidden;
+}
+.box {
+    padding: 5px 7px;
+}
+.thumbnail {
+    margin-bottom: 0;
+}
+.productimg {
+    position: relative;
+    display: table;
+    height: 140px;
+    overflow: hidden;
+    width: 100%;
+}
+.productimg .image {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    margin-bottom: 5px;
+}
+.thumbnail .caption {
+    color: #333;
+    padding: 9px;
+}
+.box h3 {
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.box h3 a {
+    color: #e21a1a;
+    font-size: 14px;
+    font-weight: bold !important;
+}
+.box .thumbnail:hover {
+    background: #f6ffff;
+    border-color: #cce4f0;
+}
+.box .thumbnail:hover h3 a {
+    color: #00417b;
+}
+.panel-primary .panel-heading {
+    background: #0368b4;
+    margin: 0;
+    min-height: 40px;
+    padding: 0;
+}
+.sidebar .panel-primary .title{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 6px;
+    text-transform: uppercase;
+}
+.sidebar .panel-body {
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+}
+.sp2 {
+    padding-bottom: 10px;
+}
+.sidebar .panel-body .item {
+    overflow: hidden;
+    text-align: center;
+}
+.phone {
+    color: #d2261e;
+    font-family: Tahoma,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.sidebar .titlename {
+    background:url("images/bg-sp.png") no-repeat scroll center bottom;
+    color: #555555;
+    font-family: Tahoma,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.panel-primary {
+    border: 0 none;
+}
+.list-category {
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.panel-head {
+    background: #0368b4;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.title a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.sidebar ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 5px;
+}
+.sidebar ul li {
+    background:url("images/icons/li.png") no-repeat scroll 5px 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0 5px 20px;
+    position: relative;
+}
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+.sidebar ul li a, .sidebar h3 a {
+    color: #000;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out 0s;
+}
+#footer {
+    background: #007dbc;
+    margin-top: 20px;
+    color: #fff !important;
+}
+.title-footer {
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+#footer h3 {
+    color: #fff;
+    font-size: 15px;
+}
+#footer .coppyright {
+    background: #003c6b;
+    color: #fff;
+    margin-top: 10px;
+    padding: 7px 0;
+    text-align: center;
+}
+.product-info {
+    margin-bottom: 15px;
+}
+.post-content img {
+    display: block;
+    width: 100%;
+}
+.post-title {
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+.share {
+    margin: 20px 0;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+    background: #ccc;
+    border: medium none !important;
+    color: #333;
+    margin: 2px;
+    padding: 5px 10px !important;
+    text-decoration: none;
+}
+.wp-pagenavi span.current {
+    background: #007dbc!important;
+    color: #fff;
+    font-weight: bold;
+}
+.paging {
+    margin-top: 20px;
+}
+.wpcf7-form-control {
+    border: 1px solid #007dbc;
+    padding: 5px 10px;
+}
+.banner_right a img{
+    margin-bottom: 15px;
+}
+#preview{position:absolute;background:#fff;padding:5px;display:none;box-shadow:5px;border:1px solid #ececec;z-index:99999;}
+
+/*Mobile*/
+.mobile-header {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    background: #FFF;
+    top: 0;
+    left: 0;
+    height: 50px;
+    border-bottom: 1px solid #0368B4;
+    width: 100%
+}
+.mobile-header .left-menu, .mobile-header .right-menu {
+    border: none;
+    background: #0368B4;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s
+}
+.mobile-header .left-menu {
+    left: 0
+}
+.mobile-header .right-menu {
+    right: 0
+}
+.mobile-header .title {
+    width: 100%;
+    text-align: center
+}
+.mobile-header .title p {
+    font-size: 20px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-top: 1rem;
+    padding-bottom: 10px;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+.mobile-header .title p a{
+    color: #0368B4
+}
+.mobile-header .title img{
+    max-height: 48px
+}
+.mobile-header .icon-dj-bag {
+    font-size: 17px;
+    font-size: 1.7rem;
+    color: #FFF
+}
+.st-menu {
+    position: fixed;
+    top: 0;
+    left: -270px;
+    display: none;
+    width: 270px;
+    height: 100%;
+    z-index: 99999;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+    background: #0368B4;
+    color: #fff;
+}
+
+.st-menu .nav {
+    margin-top: 15px
+}
+.st-menu > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.st-menu ul li {
+    width: 100%;
+}
+.st-menu ul li a {
+    color: #fff;
+    padding: 5px 15px
+}
+.st-menu ul li a:hover,
+.st-menu ul li a:focus{
+    color: #ff3300;
+    background: none
+}
+.st-menu ul.sub-menu li{
+    padding: 5px 0
+}
+.st-menu ul.sub-menu li a{
+    padding-left: 0
+}
+.st-menu > .nav > li > .sub-menu > li > .sub-menu {
+    padding-left: 20px;
+}
+.bar {
+    margin: 0 auto;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 3px;
+    background: #fff;
+    box-shadow: inset 0 9999in;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+.bar:nth-child(1) {
+    margin-top: 5px
+}
+.menu-icon {
+    display: none
+}
+.st-menu-open .menu-icon {
+    display: block
+}
+.st-menu-open .menu-icon+span {
+    display: none
+}
+.st-menu-open .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 5px
+}
+.st-menu-open .bar:nth-child(2) {
+    display: none
+}
+.st-menu-open .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px
+}
+.st-menu .searchcontainer{
+    position: relative;
+    margin-top: 15px;
+    padding: 0 15px
+}
+.st-menu .searchcontainer span{
+    color: #0368B4;
+    font-size: 16px;
+    left: 21px;
+    position: absolute;
+    top: 8px;
+}
+.st-menu .searchcontainer .input-text{
+    width: 100%;
+    padding: 5px;
+    color: #000;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    #mainmenu ul li a{padding: 0 17px}
+}
+@media (min-width: 768px) and (max-width: 991px){
+}
+@media screen and (max-width: 991px) {
+    #wpadminbar{display: none;visibility: hidden}
+    .mobile-header {display: block}
+    .desktop-header, .fixedHeader{display: none}
+    #mainslider{margin-top: 65px}
+}
+@media (max-width: 768px) {
+}
+@media screen and (max-width: 480px){
+}
+@media screen and (max-width: 360px){
+}

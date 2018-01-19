@@ -1,0 +1,253 @@
+/*------------------------------------------------------------------------
+ # So Article slider  - Version 1.0 - Licence Owner SmartOSS
+ # ------------------------------------------------------------------------
+ # Copyright (C) 2009-2010 Smart OpenSource Solutions. All Rights Reserved.
+ # @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Author: Smart OpenSource Solutions
+ # Websites: http://www.smartoss.net
+ -------------------------------------------------------------------------*/
+
+/* CSS Document */
+.so_slider {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+
+.so_slider ul{
+	margin: 0pt!important; 
+	padding: 0pt!important; 
+	position: relative; 
+	list-style-type: none; 
+	z-index: 1;
+}
+
+.so_slider ul li{
+	padding:0px!important;
+	margin:0px!important;
+}
+
+.so_slider_content {
+	/*border: solid 1px #CCCCCC;*/
+}
+
+.so_slider_content ul li {
+	list-style: none;
+	background: none !important;
+	margin:0 !important;
+}
+.so_slider_content ul li a{
+    padding: 0px !important;
+    border: none !important;
+}
+.so_slider_content ul li a img{
+    border: none !important;
+}
+.so_slider_content .so_item{
+	/*padding: 5px;*/		
+}
+
+.so_slider_content .so_item_theme3{
+    padding: 8px;
+    border:1px solid #C6C6C6;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0px 20px 0px;
+    cursor: pointer;	
+}
+.so_slider_content .so_item_theme3 a{
+    padding:0px !important;
+    
+}
+.so_slider_content .so_item_theme3 .so_img a img{
+    border:none !important;
+}
+.so_slider_content .so_item img{
+	/*cursor: pointer;*/
+    border:none !important;		
+}
+
+.so_price {
+	color: #ff0000;
+}
+
+.so_slider a {
+	text-decoration: none;
+	color: #004F8B;
+	text-transform: none;
+}
+
+.so_slider a:hover {
+	color: #145077;
+	text-decoration: underline;
+}
+
+.so_title {
+	margin:  0;
+	padding: 5px 0;
+}
+
+.so_hover {
+	backgound: #cccccc;
+}
+
+.so_slider_content {
+	display: block;
+}
+
+.so_description {
+	color: #434343;
+    text-align: left;
+    font-size: 11px !important;
+}
+.horizotal .so_pre {
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.horizotal .so_pause {
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	cursor: pointer;
+	display: none;
+}
+
+.horizotal .so_next {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+
+
+
+.so_navigation {
+	background:none repeat scroll 0 0 transparent;
+	height:20px;
+	position:absolute;	
+	width:100%;
+	z-index:9999;
+	display: none;
+}
+
+.horizotal .so_pre {
+	text-align: center !important;
+	font-weight: bold;
+}
+
+.horizotal .so_next {
+	text-align: center !important;
+	font-weight: bold;
+}
+
+.vertical .so_navigation {
+	background:none repeat scroll 0 0 transparent;
+	height: auto;
+	position:absolute;	
+	width:100%;
+	z-index:9999;
+	display: none;
+}
+
+.vertical .so_pre {
+	height: 55px;
+	width: 35px;
+	background:url(../images/v_next.png) no-repeat;
+	padding-top:10px;
+	text-align: center !important;
+	font-weight: bold;
+}
+
+.vertical .so_next {
+	height: 40px;
+	width: 35px;
+	background:url(../images/v_pre.png) no-repeat;
+	padding-top:10px;
+	text-align: center !important;
+	font-weight: bold;
+}
+
+
+.vertical .so_pre {
+	position: absolute;
+	left: 45%;
+	top: 0;
+	cursor: pointer;
+}
+
+.vertical .so_pause {
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	cursor: pointer;
+	display: none;
+}
+
+.vertical .so_next {
+	position: absolute;
+	left: 45%;
+	bottom: 0;
+	cursor: pointer;
+}
+
+
+.so_item .so_img{
+	padding: 8px;
+	border: solid 1px #c6c6c6;
+}
+.so_item .so_img a{
+	padding: 0px !important;
+	border: none !important;
+    background: none !important;
+}
+.so_img a{
+    padding: 0px !important;
+    background: none !important;
+    border: none !important;
+}
+.so_img a img{
+    background: none !important;
+    border: none !important;
+}
+h4.so_title {
+	padding: 0;
+	margin: 2px 0;
+	text-align: left;
+}
+
+h4.so_title a {
+	/*text-transform: uppercase;*/
+	font-weight: bold;
+	/*color:	#2E2D2D !important;*/
+	font-size: 13px;
+    padding: 0px !important;
+    text-transform: none !important;
+    background: none !important;
+    text-decoration: none !important;
+}
+
+.so_content {
+	padding-top: 5px;
+    font-size: 11px;
+    text-align: left;
+}
+
+.so_readmore {
+	text-align:right !important;
+	padding-right:5px;
+}
+
+.so_readmore a{
+	color: #4940a4 ;
+	font-weight: bold;
+	font-size: 11px;	
+/* 	padding-right: 10px; */
+    background: none !important;
+    text-transform: none !important;
+    text-decoration: none !important;
+}
+
